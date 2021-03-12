@@ -212,12 +212,12 @@
                                     <div class="as-producttile-tilehero with-paddlenav with-paddlenav-onhover">
                                         <div class="as-dummy-container as-dummy-img">
 
-                                            <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="ir ir item-image as-producttile-image  " alt="" width="445" height="445">
+                                            <img src="./assets/gs9.png" class="ir ir item-image as-producttile-image  " alt="" width="445" height="445">
                                         </div>
                                         <div class="images mini-gallery gal1 ">
                                             <ul class="clearfix as-producttile-nojs">
                                                 <li class="as-searchtile-nojs">
-                                                    <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="ir relatedlink item-image as-producttile-image" alt="" width="445" height="445" data-scale-params-2="wid=890&amp;hei=890&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1502831144597">
+                                                    <img src="./assets/gs9.png" class="ir relatedlink item-image as-producttile-image" alt="" width="445" height="445" data-scale-params-2="wid=890&amp;hei=890&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1502831144597">
                                                 </li>
                                             </ul>
 
@@ -225,7 +225,7 @@
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="2|Beats Studio3 Wireless Over‑Ear Headphones - Shadow Gray|MQUF2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/samsung-galaxy-s9-xxl.jpg" class="ir ir item-image as-producttile-image" alt="" data-desc="Samsung galaxy" style="content:-webkit-image-set(url(https://md6.pricebaba.com/images/product/mobile/46638/samsung-galaxy-s9-xxl.jpg">
+                                                        <img src="./assets/gs9.png" class="ir ir item-image as-producttile-image" alt="" data-desc="Samsung galaxy" style="content:-webkit-image-set(url(https://md6.pricebaba.com/images/product/mobile/46638/samsung-galaxy-s9-xxl.jpg">
                                                     </div>
                                                     
                                                 </div>
