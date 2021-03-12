@@ -110,7 +110,6 @@
                                                 <p class="as-producttile-tilelink">
                                                     <span data-ase-truncate="2" style="font-size:40px"><?php echo $_POST['title'] ?></span>
                                                 </p>
-
                                             </h3>
                                         </div>
                                         <h3 >
@@ -120,7 +119,7 @@
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
                                 </div>
                             </div>
                         </div>
