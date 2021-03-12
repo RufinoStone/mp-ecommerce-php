@@ -432,7 +432,7 @@
                                         <div class="images mini-gallery gal4 ">
                                             <ul class="clearfix as-producttile-nojs">
                                                 <li class="as-searchtile-nojs">
-                                                    <img src="./assets/motorola-moto-g4-3.jpg" class="ir relatedlink item-image as-producttile-image" alt="" width="445" height="445" data-scale-params-2="wid=890&amp;hei=890&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1524778255945">
+                                                    <img src="./assets/motog.png" class="ir relatedlink item-image as-producttile-image" alt="" width="445" height="445" data-scale-params-2="wid=890&amp;hei=890&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1524778255945">
                                                 </li>
                                             </ul>
 
@@ -440,7 +440,7 @@
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="5|Beats Solo3 Wireless On-Ear Headphones - Neighborhood Collection - Break Blue|MQ392">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/motorola-moto-g4-3.jpg" class="ir ir item-image as-producttile-image" style="content:-webkit-image-set(url(https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g4-3.jpg) 1x);">
+                                                        <img src="./assets/motog.png" class="ir ir item-image as-producttile-image" style="content:-webkit-image-set(url(https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g4-3.jpg) 1x);">
                                                     </div>
                                                     
                                                 </div>
@@ -465,7 +465,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/motorola-moto-g4-3.jpg">
+                                            <input type="hidden" name="img" value="./assets/motog.png">
                                             <input type="hidden" name="title" value="Moto G4">
                                             <input type="hidden" name="price" value="8000">
                                             <input type="hidden" name="unit" value="1">
@@ -486,7 +486,7 @@
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/003.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(https://news.mynavi.jp/article/20180416-xperia-next/images/003.jpg) 1x);">
+                                                        <img src="./assets/xperia.png" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(https://news.mynavi.jp/article/20180416-xperia-next/images/003.jpg) 1x);">
                                                     </div>
                                                     
                                                 </div>
@@ -516,7 +516,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/003.jpg">
+                                            <input type="hidden" name="img" value="./assets/xperia.png">
                                             <input type="hidden" name="title" value="Sony Xperia XZ2">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
