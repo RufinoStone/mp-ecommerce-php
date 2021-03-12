@@ -7,12 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 
     <script>
-    
-    
-    </script>
 
+    window.Mercadopago.setPublishableKey("APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15");
+    php composer.phar require "mercadopago/dx-php"
+
+    </script>
+    
+    <?php
+  $token = $_REQUEST["token"];
+  $payment_method_id = $_REQUEST["payment_method_id"];
+  $installments = $_REQUEST["installments"];
+  $issuer_id = $_REQUEST["issuer_id"];
+?>
+
+<?php
+    require_once 'vendor/autoload.php';
+
+    MercadoPago\SDK::setAccessToken("APP_USR-334491433003961-030821-12d7475807d694b645722c1946
+    d5ce5a-725736327");
+    //...
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = 100;
+    $payment->token = $token;
+    $payment->description = "Smartphone";
+    $payment->installments = $installments;
+    $payment->payment_method_id = $payment_method_id;
+    $payment->issuer_id = $issuer_id;
+    $payment->payer = array(
+    "email" => "test_user_92801501@testuser.com"
+    );
+    // Armazena e envia o pagamento
+    $payment->save();
+    //...
+    // Imprime o status do pagamento
+    echo $payment->status;
+    //...
+?>
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -81,7 +115,7 @@
                                 <form action="https://rufinostone-mp-commerce-php.herokuapp.com/processar-pagamento" method="POST">
                                  <script
                                  src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js"
-                                 data-public-key="ENV_PUBLIC_KEY"
+                                 data-public-key="APP_USR-6096a634-0b35-452c-94c9-a18adb8ffb15"
                                  data-transaction-amount="100.00">
                                  </script>
                                </form>
