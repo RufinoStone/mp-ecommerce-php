@@ -67,7 +67,7 @@
 
                                     <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text" style="color:#ffff;">
-                                            Smartphones
+                                            Comprar
                                         </h2>
                                     </button>
 
