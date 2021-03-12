@@ -358,7 +358,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/u_10168742.jpg">
+                                            <input type="hidden" name="img" value="./assets/iphone8.png">
                                             <input type="hidden" name="title" value="iPhone 8">
                                             <input type="hidden" name="price" value="16000">
                                             <input type="hidden" name="unit" value="1">
@@ -379,7 +379,7 @@
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="4|BeatsX Earphones - Matte Silver|MR3J2">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/motorola-moto-g5-plus-1.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" data-desc="BeatsX Earphones - Matte Silver - Image 1 " style="content:-webkit-image-set(url(https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5-plus-1.jpg) 1x);">
+                                                        <img src="./assets/motorolag5.png" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" data-desc="BeatsX Earphones - Matte Silver - Image 1 " style="content:-webkit-image-set(url(./assets/motorolag5.png) 1x);">
                                                     </div>
                                                     
                                                 </div>
@@ -415,7 +415,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/motorola-moto-g5-plus-1.jpg">
+                                            <input type="hidden" name="img" value="./assets/./assets/motorolag5.png">
                                             <input type="hidden" name="title" value="Motorola G5">
                                             <input type="hidden" name="price" value="9000">
                                             <input type="hidden" name="unit" value="1">
