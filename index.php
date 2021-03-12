@@ -300,7 +300,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/lgg6.png">
+                                            <input type="hidden" name="img" value="./assets/lgg6.png"> 
                                             <input type="hidden" name="title" value="LG G6">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
