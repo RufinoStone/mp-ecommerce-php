@@ -48,15 +48,9 @@
         <div class="as-search-wrapper" role="main">
             <div class="as-navtuck-wrapper">
                 <div class="as-l-fullwidth  as-navtuck" data-events="event52">
-                    <div>
-                        <div class="pd-billboard pd-category-header">
-                            <div class="pd-l-plate-scale">
-                            <img src="./assets/sitebanner.png" alt="" width="1440" height="520" data-scale-params-2="wid=2880&amp;hei=640&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1503948581306" class="pd-billboard-hero ir">
-                                
-                            </div>
-                        </div>
-                    </div>
+            
                 </div>
+                <img src="./assets/sitebanner.png" style="top:100" alt="" width="100%" height="auto">
             </div>
             <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
 
