@@ -6,32 +6,12 @@
     <link rel="shortcut icon" href="./assets/icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <script>
     
-    <dependency>
-            <groupId> com.mercadopago </groupId>
-            <artifactId> sdk-java </artifactId>
-            <version> 1.8.0 </version>
-</dependency>
-     import com.mercadopago.MercadoPago;
-     MercadoPago.SDK.setAccessToken("APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327");
-     Preference preference = new Preference();
-
-     // Cria um item na preferência
-     Item item = new Item();
-     item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75.56);
-    preference.appendItem(item);
-    preference.save();
-
+    
     </script>
-
-    <script
-  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}">
-</script>
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -97,8 +77,14 @@
                                         </h2>
                                     </button>
 
-
                                 </div>
+                                <form action="https://rufinostone-mp-commerce-php.herokuapp.com/processar-pagamento" method="POST">
+                                 <script
+                                 src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js"
+                                 data-public-key="ENV_PUBLIC_KEY"
+                                 data-transaction-amount="100.00">
+                                 </script>
+                               </form>
 
                             </div>
                         </div>
