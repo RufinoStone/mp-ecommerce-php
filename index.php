@@ -307,7 +307,7 @@
                                             <input type="hidden" name="title" value="LG G6">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
+                                            <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -365,7 +365,7 @@
                                             <input type="hidden" name="title" value="iPhone 8">
                                             <input type="hidden" name="price" value="16000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
+                                            <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -422,7 +422,7 @@
                                             <input type="hidden" name="title" value="Motorola G5">
                                             <input type="hidden" name="price" value="9000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
+                                            <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -472,7 +472,7 @@
                                             <input type="hidden" name="title" value="Moto G4">
                                             <input type="hidden" name="price" value="8000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
+                                            <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
                                     </div>
                                 </div>
@@ -523,7 +523,7 @@
                                             <input type="hidden" name="title" value="Sony Xperia XZ2">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
-                                            <button type="submit" class="mercadopago-button" formmethod="post">Comprar</button>
+                                            <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
                                     </div>
                                 </div>
