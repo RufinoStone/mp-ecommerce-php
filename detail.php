@@ -3,7 +3,7 @@
     
     <meta name="viewport" content="width=1024">
     <title>Tienda e-commerce</title>
-
+    <link rel="shortcut icon" href="./assets/icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
 
