@@ -7,6 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
 
+    <script>
+    
+    <dependency>
+            <groupId> com.mercadopago </groupId>
+            <artifactId> sdk-java </artifactId>
+            <version> 1.8.0 </version>
+</dependency>
+     import com.mercadopago.MercadoPago;
+     MercadoPago.SDK.setAccessToken("APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327");
+     Preference preference = new Preference();
+
+     // Cria um item na preferência
+     Item item = new Item();
+     item.setTitle("Meu produto")
+    .setQuantity(1)
+    .setUnitPrice((float) 75.56);
+    preference.appendItem(item);
+    preference.save();
+
+    </script>
+
+    <script
+  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}">
+</script>
+
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
