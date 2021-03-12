@@ -415,7 +415,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/./assets/motorolag5.png">
+                                            <input type="hidden" name="img" value="./assets/motorolag5.png">
                                             <input type="hidden" name="title" value="Motorola G5">
                                             <input type="hidden" name="price" value="9000">
                                             <input type="hidden" name="unit" value="1">
