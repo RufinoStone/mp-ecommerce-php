@@ -23,7 +23,7 @@
         .as-filter-button-text {
             font-size: 26px;
             font-weight: 700;
-            color: #333;
+            color: #161616;
         }
         .row.as-fixed-nav {
             border-bottom: 1px solid #ddd;
@@ -32,7 +32,7 @@
             height: 330px;
         }
         .as-footnotes {
-            background: #333;
+            background: #161616;
             color: #fff;
             padding: 16px 40px;
         }
@@ -108,7 +108,7 @@
                                         <div class="as-producttile-title">
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
-                                                    <span data-ase-truncate="2"><?php echo $_POST['title'] ?></span>
+                                                    <span data-ase-truncate="2" style="font-size:40px"><?php echo $_POST['title'] ?></span>
                                                 </p>
 
                                             </h3>
