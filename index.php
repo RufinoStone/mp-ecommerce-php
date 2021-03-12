@@ -245,7 +245,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/samsung-galaxy-s9-xxl.jpg">
+                                            <input type="hidden" name="img" value="./assets/gs9.png">
                                             <input type="hidden" name="title" value="Samsung Galaxy S9">
                                             <input type="hidden" name="price" value="15000">
                                             <input type="hidden" name="unit" value="1">
@@ -312,7 +312,7 @@
                                     <div class="as-producttile-tilehero with-paddlenav with-paddlenav-onhover">
                                         <div class="as-dummy-container as-dummy-img">
 
-                                            <img src="./assets/Screen Shot 2017-11-01 at 13.01.54.png" class="ir ir item-image as-producttile-image  " alt="" width="445" height="445">
+                                            <img src="./assets/iphone8.png" class="ir ir item-image as-producttile-image  " alt="" width="445" height="445">
                                         </div>
                                         <div class="images mini-gallery gal0 ">
                                             <ul class="clearfix as-producttile-nojs">
@@ -325,11 +325,11 @@
                                                 <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="1|AirPods|MMEF2" style="left: 0px;">
                                                     <div class="as-tilegallery-element as-image-selected">
                                                         <div class=""></div>
-                                                        <img src="./assets/Screen Shot 2017-11-01 at 13.01.54.png" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" data-desc="AirPods - Image 1 ">
+                                                        <img src="./assets/iphone8.png" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" data-desc="AirPods - Image 1 ">
                                                     </div>
                                                     <div class="as-tilegallery-element">
                                                         <div class=""></div>
-                                                        <img src="./assets/u_10168742.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445">
+                                                        <img src="./assets/iphone8.png" class="ir ir item-image as-producttile-image" alt="" width="445" height="445">
                                                     </div>
                                                 </div>
                                             </div>
