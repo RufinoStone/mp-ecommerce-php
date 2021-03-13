@@ -8,29 +8,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
               
-<?php
-
-php composer.phar require "mercadopago/dx-php"
-
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-
-// Configura credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
-
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-$preference->save();
-?>
 
 <script
+
   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
   data-preference-id="<?php echo $preference->id; ?>">
 </script>
