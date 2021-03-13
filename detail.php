@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
 
     <script>
     
@@ -83,16 +90,68 @@ exit $RESULT
 <body class="as-theme-light-heroimage">
 
 <?php
-php composer.phar require "mercadopago/dx-php"
 
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
+require __DIR__  . '/vendor/autoload.php';
 
-// Configura credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+//REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel/credentials
+MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+
+switch($path){
+    case '':
+    case '/':
+        require __DIR__ . '/../../client/index.html';
+        break;
+    case '/create_preference':
+        $json = file_get_contents("php://input");
+        $data = json_decode($json);
+
+        $preference = new MercadoPago\Preference();
+
+        $item = new MercadoPago\Item();
+        $item->title = $data->description;
+        $item->quantity = $data->quantity;
+        $item->unit_price = $data->price;
+
+        $preference->items = array($item);
+
+        $preference->back_urls = array(
+            "success" => "http://localhost:8080/feedback",
+            "failure" => "http://localhost:8080/feedback", 
+            "pending" => "http://localhost:8080/feedback"
+        );
+        $preference->auto_return = "approved"; 
+
+        $preference->save();
+
+        $response = array(
+            'id' => $preference->id,
+        ); 
+        echo json_encode($response);
+        break;        
+    case '/feedback':
+        $respuesta = array(
+            'Payment' => $_GET['payment_id'],
+            'Status' => $_GET['status'],
+            'MerchantOrder' => $_GET['merchant_order_id']        
+        ); 
+        echo json_encode($respuesta);
+        break;
+    //Server static resources
+    default:
+        $file = __DIR__ . '/../../client' . $path;
+        $extension = end(explode('.', $path));
+        $content = 'text/html';
+        switch($extension){
+            case 'js': $content = 'application/javascript'; break;
+            case 'css': $content = 'text/css'; break;
+            case 'png': $content = 'image/png'; break;
+        }
+        header('Content-Type: '.$content);
+        readfile($file);          
+}
 ?>
-
-
 
     <div class="stack">
         
