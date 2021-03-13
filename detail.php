@@ -12,6 +12,11 @@
     <script type="text/javascript" src="js/index.js" defer></script>
 
     <script
+  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
+
+    <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
@@ -88,7 +93,7 @@ $preference->save();
                             <div class="row as-search-navbar" style="background-color:#161616;" id="as-search-navbar" style="width: auto;">
                                 <div class="as-accessories-filter-tile column large-6 small-3" style="background-color:#161616;">
 
-                                    <button id="button-checkout" class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
+                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <h2 class=" as-filter-button-text" style="color:#ffff;">
                                             Comprar
                                         </h2>
@@ -142,7 +147,7 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
+                                    <button id="button-checkout" type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
                                 </div>
                             </div>
                         </div>
