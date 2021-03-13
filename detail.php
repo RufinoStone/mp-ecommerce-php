@@ -83,6 +83,8 @@ exit $RESULT
 <body class="as-theme-light-heroimage">
 
 <?php
+php composer.phar require "mercadopago/dx-php"
+
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
