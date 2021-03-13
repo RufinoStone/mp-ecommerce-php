@@ -51,6 +51,29 @@
 
 <body class="as-theme-light-heroimage">
 
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+
+// Configura credenciais
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+
+// Cria um objeto de preferência
+$preference = new MercadoPago\Preference();
+
+// Cria um item na preferência
+$item = new MercadoPago\Item();
+  $item->id = "1234";
+  $item->title = "Heavy Duty Plastic Table";
+  $item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+  $item->category_id = "home";
+  $item->quantity = 7;
+  $item->currency_id = "BRL";
+  $item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
+?>
+
     <div class="stack">
         
         <div class="as-search-wrapper" role="main">
