@@ -7,50 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-    <script type="text/javascript" src="js/index.js" defer></script>
-
-    <script>
-    
-    php composer.phar require "mercadopago/dx-php"
-    php -r "copy ('https://getcomposer.org/installer', 'composer-setup.php');" 
-    php -r "if (hash_file ('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0finker' elseer verificado 'instalação echo-unlixer' verificado 'composink3 (echo-unlixer) 181c; php ');} echo PHP_EOL; " 
-    php composer-setup.php 
-    php -r "unlink ('composer-setup.php');"
-    php composer-setup.php --install-dir=bin
-
-    #!/bin/sh
-
-EXPECTED_CHECKSUM="$(php -r 'copy("https://composer.github.io/installer.sig", "php://stdout");')"
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-ACTUAL_CHECKSUM="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
-
-if [ "$EXPECTED_CHECKSUM" != "$ACTUAL_CHECKSUM" ]
-then
-    >&2 echo 'ERROR: Invalid installer checksum'
-    rm composer-setup.php
-    exit 1
-fi
-
-php composer-setup.php --quiet
-RESULT=$?
-rm composer-setup.php
-exit $RESULT
-    
-    </script>
-    
-
-<script
-  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>">
-</script>
-
-
 
 
     <script
@@ -151,7 +107,6 @@ switch($path){
         header('Content-Type: '.$content);
         readfile($file);          
 }
-?>
 
     <div class="stack">
         
