@@ -87,6 +87,16 @@ exit $RESULT
 require __DIR__ .  '/vendor/autoload.php';
 ?>
 
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+
+// Configura credenciais
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+?>
+
+        
+
     <div class="stack">
         
         <div class="as-search-wrapper" role="main">
