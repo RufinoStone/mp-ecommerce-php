@@ -91,7 +91,6 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 
 
-        
 
     <div class="stack">
         
