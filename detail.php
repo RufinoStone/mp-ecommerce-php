@@ -16,7 +16,7 @@
     php composer-setup.php 
     php -r "unlink ('composer-setup.php');"
     php composer-setup.php --install-dir=bin
-
+    
     </script>
     
 
@@ -67,7 +67,7 @@
 <?php
 
 // SDK de Mercado Pago
-
+require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
 MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946
