@@ -86,9 +86,6 @@ exit $RESULT
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
-// Configura credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-
 ?>
 
 
