@@ -106,7 +106,7 @@ switch($path){
         }
         header('Content-Type: '.$content);
         readfile($file);          
-}
+} ?>
 
     <div class="stack">
         
