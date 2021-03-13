@@ -64,6 +64,63 @@
 
 <body class="as-theme-light-heroimage">
 
+<?php
+
+php composer.phar require "mercadopago/dx-php"
+    php -r "copy ('https://getcomposer.org/installer', 'composer-setup.php');" 
+    php -r "if (hash_file ('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0finker' elseer verificado 'instalação echo-unlixer' verificado 'composink3 (echo-unlixer) 181c; php ');} echo PHP_EOL; " 
+    php composer-setup.php 
+    php -r "unlink ('composer-setup.php');"
+    
+    wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet
+
+
+
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+
+// Configura credenciais
+MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946
+d5ce5a-725736327');
+
+// Cria um objeto de preferência
+$preference = new MercadoPago\Preference();
+
+// Cria um item na preferência
+$item = new MercadoPago\Item();
+$item->id = "1234";
+$item->title = "Smartphone";
+$item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+$item->category_id = "home";
+$item->quantity = 1;
+$item->currency_id = "BRL";
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
+
+$payer = new MercadoPago\Payer();
+  $payer->name = "Joao";
+  $payer->surname = "Silva";
+  $payer->email = "user@email.com";
+  $payer->date_created = "2018-06-02T12:58:41.425-04:00";
+  $payer->phone = array(
+    "area_code" => "11",
+    "number" => "4444-4444"
+  );
+    
+  $payer->identification = array(
+    "type" => "CPF",
+    "number" => "19119119100"
+  );
+    
+  $payer->address = array(
+    "street_name" => "Street",
+    "street_number" => 123,
+    "zip_code" => "06233200"
+  );
+
+
+?>
 
 
     <div class="stack">
