@@ -15,8 +15,6 @@
     php composer-setup.php 
     php -r "unlink ('composer-setup.php');"
     
-    wget https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer -O - -q | php -- --quiet
-
     </script>
     
 
@@ -66,7 +64,6 @@
 
 <?php
 
-php composer.phar require "mercadopago/dx-php"
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
