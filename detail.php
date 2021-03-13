@@ -51,6 +51,7 @@
 
 <body class="as-theme-light-heroimage">
 
+
 <?php
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
@@ -72,6 +73,29 @@ $item = new MercadoPago\Item();
   $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
+
+$payer = new MercadoPago\Payer();
+  $payer->name = "Joao";
+  $payer->surname = "Silva";
+  $payer->email = "user@email.com";
+  $payer->date_created = "2018-06-02T12:58:41.425-04:00";
+  $payer->phone = array(
+    "area_code" => "11",
+    "number" => "4444-4444"
+  );
+    
+  $payer->identification = array(
+    "type" => "CPF",
+    "number" => "19119119100"
+  );
+    
+  $payer->address = array(
+    "street_name" => "Street",
+    "street_number" => 123,
+    "zip_code" => "06233200"
+  );
+
+
 ?>
 
     <div class="stack">
