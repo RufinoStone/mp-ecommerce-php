@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <script>
-    
+
     php composer.phar require "mercadopago/dx-php"
     php -r "copy ('https://getcomposer.org/installer', 'composer-setup.php');" 
     php -r "if (hash_file ('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0finker' elseer verificado 'instalação echo-unlixer' verificado 'composink3 (echo-unlixer) 181c; php ');} echo PHP_EOL; " 
@@ -64,7 +64,34 @@
 
 <body class="as-theme-light-heroimage">
 
-<?php
+    <div class="stack">
+        
+        <div class="as-search-wrapper" role="main">
+            <div class="as-navtuck-wrapper" style="background-color:#161616;">
+                <div class="as-l-fullwidth  as-navtuck" data-events="event52">
+                    
+                </div>
+                <img src="./assets/sitebanner.png" style="top:100" alt="" width="100%" height="auto">
+            </div>
+            <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
+
+                <div id="accessories-tab" class="as-accessories-details">
+                    <div class="as-accessories" id="as-accessories">
+                        <div class="as-accessories-header">
+                            <div class="as-search-results-count">
+                                <span class="as-search-results-value"></span>
+                            </div>
+                        </div>
+                        <div class="as-searchnav-placeholder" style="height: 77px;">
+                            <div class="row as-search-navbar" style="background-color:#161616;" id="as-search-navbar" style="width: auto;">
+                                <div class="as-accessories-filter-tile column large-6 small-3" style="background-color:#161616;">
+
+                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
+                                        <h2 class=" as-filter-button-text" style="color:#ffff;">
+                                            Comprar
+                                        </h2>
+
+                                        <?php
 
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
@@ -112,33 +139,6 @@ $payer = new MercadoPago\Payer();
 
 ?>
 
-
-    <div class="stack">
-        
-        <div class="as-search-wrapper" role="main">
-            <div class="as-navtuck-wrapper" style="background-color:#161616;">
-                <div class="as-l-fullwidth  as-navtuck" data-events="event52">
-                    
-                </div>
-                <img src="./assets/sitebanner.png" style="top:100" alt="" width="100%" height="auto">
-            </div>
-            <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
-
-                <div id="accessories-tab" class="as-accessories-details">
-                    <div class="as-accessories" id="as-accessories">
-                        <div class="as-accessories-header">
-                            <div class="as-search-results-count">
-                                <span class="as-search-results-value"></span>
-                            </div>
-                        </div>
-                        <div class="as-searchnav-placeholder" style="height: 77px;">
-                            <div class="row as-search-navbar" style="background-color:#161616;" id="as-search-navbar" style="width: auto;">
-                                <div class="as-accessories-filter-tile column large-6 small-3" style="background-color:#161616;">
-
-                                    <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
-                                        <h2 class=" as-filter-button-text" style="color:#ffff;">
-                                            Comprar
-                                        </h2>
                                     </button>
 
                                 </div>
