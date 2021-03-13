@@ -164,15 +164,15 @@ $preference->save();
                                     <div class="as-producttile-titlepricewraper" style="min-height: 128px;">
                                         <div class="as-producttile-title">
                                             <h3 class="as-producttile-name">
-                                                <p class="as-producttile-tilelink">
+                                                <p id="product-description" class="as-producttile-tilelink">
                                                     <span data-ase-truncate="2" style="font-size:40px"><?php echo $_POST['title'] ?></span>
                                                 </p>
                                             </h3>
                                         </div>
-                                        <h3 >
+                                        <h3 id="unit-price">
                                             <?php echo "$" . $_POST['price'] ?>
                                         </h3>
-                                        <h3 >
+                                        <h3 id="quantity">
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
