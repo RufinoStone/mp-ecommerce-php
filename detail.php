@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<script>
+data-header-color="#c0392b"
+data-button-label="BATATA"
+
+</script>
           
     <?php
     include("/vendor/autoload.php");
@@ -33,7 +38,8 @@ $preference->save();
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+    </script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
@@ -142,7 +148,7 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <script style="background-color: #161616"
+                                    <script
                                      src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
                                      data-preference-id="<?php echo $preference->id; ?>">
                                     </script>

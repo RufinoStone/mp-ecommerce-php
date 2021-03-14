@@ -52,7 +52,7 @@ body {
   .shopping-cart .block-heading h2,
   .shopping-cart .block-heading h3 {
     margin-bottom: 1.2rem;
-    color: #009EE3;
+    color: #161616;
   }
   
   .shopping-cart .items {
@@ -76,7 +76,7 @@ body {
   }
   
   .shopping-cart .items .product .info .product-details h5 {
-    color: #009EE3;
+    color: #161616;
     font-size: 19px;
   }
   
@@ -87,7 +87,7 @@ body {
   
   .shopping-cart .items .product .info .product-details label {
     width: 50px;
-    color: #009EE3;
+    color: #161616;
     font-size: 19px;
   }
   
