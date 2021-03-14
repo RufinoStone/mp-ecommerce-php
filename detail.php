@@ -8,75 +8,29 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
 
           
     <?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
 
-require __DIR__  . '/vendor/autoload.php';
+// Configura credenciais
+MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946
+d5ce5a-725736327');
 
-//REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel/credentials
-MercadoPago\SDK::setAccessToken("APP_USR-334491433003961-030821-12d7475807d694b645722c1946
-d5ce5a-725736327");
+// Cria um objeto de preferência
+$preference = new MercadoPago\Preference();
 
-$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
-
-switch($path){
-    case '':
-    case '/':
-        require __DIR__ . '/../../client/index.html';
-        break;
-    case '/create_preference':
-        $json = file_get_contents("php://input");
-        $data = json_decode($json);
-
-        $preference = new MercadoPago\Preference();
-
-        $item = new MercadoPago\Item();
-        $item->title = $data->description;
-        $item->quantity = $data->quantity;
-        $item->unit_price = $data->price;
-
-        $preference->items = array($item);
-
-        $preference->back_urls = array(
-            "success" => "http://localhost:8080/feedback",
-            "failure" => "http://localhost:8080/feedback", 
-            "pending" => "http://localhost:8080/feedback"
-        );
-        $preference->auto_return = "approved"; 
-
-        $preference->save();
-
-        $response = array(
-            'id' => $preference->id,
-        ); 
-        echo json_encode($response);
-        break;        
-    case '/feedback':
-        $respuesta = array(
-            'Payment' => $_GET['payment_id'],
-            'Status' => $_GET['status'],
-            'MerchantOrder' => $_GET['merchant_order_id']        
-        ); 
-        echo json_encode($respuesta);
-        break;
-    //Server static resources
-    default:
-        $file = __DIR__ . '/../../client' . $path;
-        $extension = end(explode('.', $path));
-        $content = 'text/html';
-        switch($extension){
-            case 'js': $content = 'application/javascript'; break;
-            case 'css': $content = 'text/css'; break;
-            case 'png': $content = 'image/png'; break;
-        }
-        header('Content-Type: '.$content);
-        readfile($file);          
-}
+// Cria um item na preferência
+$item = new MercadoPago\Item();
+$item->title = 'Meu produto';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
 ?>
 
-<script
+          <script
   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
   data-preference-id="<?php echo $preference->id; ?>">
 </script>
@@ -213,108 +167,3 @@ switch($path){
 
 </div>
 <div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div class="mp-mercadopago-checkout-wrapper" style="z-index:-2147483647;display:block;background:rgba(0, 0, 0, 0.7);border:0;overflow:hidden;visibility:hidden;margin:0;padding:0;position:fixed;left:0;top:0;width:0;opacity:0;height:0;transition:opacity 220ms ease-in;"> <svg class="mp-spinner" viewBox="25 25 50 50"> <circle class="mp-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-miterlimit="10"></circle> </svg> </div><div id="ac-gn-viewport-emitter"> </div></body></html>
-<html>
-  <head>
-    <title>Template Code - Checkout Pro</title>  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-    <script type="text/javascript" src="js/index.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <!-- Shopping Cart -->
-      <section class="shopping-cart dark">
-        <div class="container" id="container">
-          <div class="block-heading">
-            <h2>Shopping Cart</h2>
-            <p>This is an example of Checkout Pro integration of Mercado Pago</p> 
-          </div>
-          <div class="content">
-            <div class="row">
-              <div class="col-md-12 col-lg-8">
-                <div class="items">
-                  <div class="product">
-                    <div class="info">
-                      <div class="product-details">
-                        <div class="row justify-content-md-center">
-                          <div class="col-md-3">
-                            <img class="img-fluid mx-auto d-block image" src="img/product.png">
-                          </div>
-                          <div class="col-md-4 product-detail">
-                            <h5>Product</h5>
-                            <div class="product-info">
-                              <p><b>Description: </b><span id="product-description">Some book</span><br>
-                              <b>Author: </b>Dale Carnegie<br>
-                              <b>Number of pages: </b>336<br>
-                              <b>Price:</b> $ <span id="unit-price">10</span></p>
-                            </div>
-                          </div>
-                          <div class="col-md-3 product-detail">
-                            <label for="quantity"><h5>Quantity</h5></label>
-                            <input type="number" id="quantity" value="1" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-4">
-                <div class="summary">
-                  <h3>Cart</h3>
-                  <div class="summary-item"><span class="text">Subtotal</span><span class="price" id="cart-total"></span></div>
-                  <button class="btn btn-primary btn-lg btn-block" id="checkout-btn">Checkout</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--payment-->
-      <section class="payment-form dark">
-        <div class="container_payment">
-          <div class="block-heading">
-            <h2>Checkout Payment</h2>
-            <p>This is an example of a Mercado Pago integration</p>
-          </div>
-          <div class="form-payment">
-            <div class="products">
-              <h2 class="title">Summary</h3>
-              <div class="item">
-                <span class="price" id="summary-price"></span>
-                <p class="item-name">Book x <span id="summary-quantity"></span></p>
-              </div>
-              <div class="total">Total<span class="price" id="summary-total"></span></div>
-            </div>
-            <div class="payment-details">
-              <div class="form-group col-sm-12">
-                <br>      
-                <div id="button-checkout">
-                </div>                 
-                <br>
-                <a id="go-back">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 10 10" class="chevron-left">
-                    <path fill="#009EE3" fill-rule="nonzero"id="chevron_left" d="M7.05 1.4L6.2.552 1.756 4.997l4.449 4.448.849-.848-3.6-3.6z"></path>
-                  </svg>
-                  Go back to Shopping Cart
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-    </main>
-    <footer>
-      <div class="footer_logo"><img id="horizontal_logo" src="img/horizontal_logo.png"></div>
-      <div class="footer_text">
-        <p>Developers Site:</p>
-        <p><a href="https://developers.mercadopago.com">https://developers.mercadopago.com</p>
-      </div>
-		</footer>
-  </body>
-</html>
