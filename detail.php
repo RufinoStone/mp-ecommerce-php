@@ -40,6 +40,7 @@ $preference->payment_methods = array(
   );
 
 $preference->colector_id = "725736327";
+$preference->notification_url = "https://webhook.site/30e36723-fc19-4410-91fd-63547e1444db";
 $preference->integrator_id = "dev_24c65fb163bf11ea96500242ac130004";
 $preference->back_urls = array(
     "success" => "https://rufinostone-mp-commerce-php.herokuapp.com/success.php",
