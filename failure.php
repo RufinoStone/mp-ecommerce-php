@@ -149,10 +149,10 @@ div.container {
 
   <div class="container">
     <b>Houve um problema na hora de efetuar o pagamento, tente novamente!</b>
+    <button class="button" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
+
   </div>
 </div>
-
-<button class="button" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
 
 </body>
             </div>
