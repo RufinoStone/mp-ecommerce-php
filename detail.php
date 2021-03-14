@@ -50,9 +50,10 @@ $preference->save();
 
 // Criar payer
 $payer = new MercadoPago\Payer();
+$payer->id = "725762927";
 $payer->name = "Joao";
 $payer->surname = "Silva";
-$payer->email = "user@email.com";
+$payer->email = "test_user_92801501@testuser.com";
 $payer->date_created = "2018-06-02T12:58:41.425-04:00";
 $payer->phone = array(
   "area_code" => "11",
