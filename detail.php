@@ -66,15 +66,6 @@ $preference->save();
 
 <body class="as-theme-light-heroimage">
 
-<form action="/processar_pagamento" method="POST">
-
-<script
-  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>">
-</script>
-
-</form>
-
     <div class="stack">
         
         <div class="as-search-wrapper" role="main">
@@ -151,7 +142,12 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
+                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO
+                                    <script
+  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
+                                    </button>
                                 </div>
                             </div>
                         </div>
