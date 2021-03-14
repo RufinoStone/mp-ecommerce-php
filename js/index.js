@@ -20,7 +20,10 @@ document.getElementById("checkout-btn").addEventListener("click", function() {
         })
         .then(function(preference) {
             createCheckoutButton(preference.id);
-            
+            $(".shopping-cart").fadeOut(500);
+            setTimeout(() => {
+                $(".container_payment").show(500).fadeIn();
+            }, 500);
         })
         .catch(function() {
             alert("Needed shopping cart");
