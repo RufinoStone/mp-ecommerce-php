@@ -247,7 +247,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/gs9.png">
                                             <input type="hidden" name="title" value="Samsung Galaxy S9">
-                                            <input type="hidden" name="price" value="15000">
+                                            <input type="hidden" name="price" value="2000">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
@@ -302,7 +302,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/lgg6.png"> 
                                             <input type="hidden" name="title" value="LG G6">
-                                            <input type="hidden" name="price" value="10000">
+                                            <input type="hidden" name="price" value="1200">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
@@ -360,7 +360,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/iphone8.png">
                                             <input type="hidden" name="title" value="iPhone 8">
-                                            <input type="hidden" name="price" value="16000">
+                                            <input type="hidden" name="price" value="4000">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
@@ -417,7 +417,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/motorolag5.png">
                                             <input type="hidden" name="title" value="Motorola G5">
-                                            <input type="hidden" name="price" value="9000">
+                                            <input type="hidden" name="price" value="1120">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
@@ -467,7 +467,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/motog.png">
                                             <input type="hidden" name="title" value="Moto G4">
-                                            <input type="hidden" name="price" value="8000">
+                                            <input type="hidden" name="price" value="1000">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
@@ -518,7 +518,7 @@
                                         <form action="/detail.php" method="get">
                                             <input type="hidden" name="img" value="./assets/xperia.png">
                                             <input type="hidden" name="title" value="Sony Xperia XZ2">
-                                            <input type="hidden" name="price" value="10000">
+                                            <input type="hidden" name="price" value="1500">
                                             <input type="hidden" name="unit" value="1">
                                             <button type="submit" style="background-color: #333;" class="mercadopago-button" formmethod="post">Comprar</button>
                                         </form>
