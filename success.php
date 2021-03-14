@@ -106,7 +106,9 @@ div.container {
 
   <div class="container">
     <b>Payment Method, Response</b>
+    <br>
     <b>External Reference, Value</b>
+    <br>
     <b>Payment ID, IDValue</b>
   </div>
 </div>
