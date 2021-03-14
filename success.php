@@ -110,6 +110,8 @@ div.container {
     <b><?php echo "External Reference: " . htmlspecialchars($_GET["external_reference"]) ?></b>
     <br>
     <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
+    <br>
+    <b><?php echo "Payment Method ID: " . htmlspecialchars($_GET["payment_method_id"]) ?></b>
   </div>
 </div>
 
