@@ -8,9 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
           
     <?php
     include("/vendor/autoload.php");
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
 MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946
@@ -62,6 +65,15 @@ $preference->save();
 
 
 <body class="as-theme-light-heroimage">
+
+<form action="/processar_pagamento" method="POST">
+
+<script
+  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
+
+</form>
 
     <div class="stack">
         
@@ -139,9 +151,7 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO
-                                   
-                                    </button>
+                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
                                 </div>
                             </div>
                         </div>
