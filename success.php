@@ -88,7 +88,7 @@ div.container {
 
                                 <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                     <h2 class=" as-filter-button-text" style="color:#ffff;">
-                                        Sua compra foi efetuada com Sucesso!
+                                        Parabêns!
                                     </h2>
                                 </button>
 
@@ -101,7 +101,7 @@ div.container {
 
 <div class="card">
   <div class="header">
-    <h1 style="font-size: 50px">Success</h1>
+    <h1 style="font-size: 50px">Pagamento Efetuado com sucesso</h1>
   </div>
 
   <div class="container">
