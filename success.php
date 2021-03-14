@@ -175,8 +175,12 @@ div.container {
     <br>
     <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
     <br>
-    <button class="button" href="https://rufinostone-mp-commerce-php.herokuapp.com/" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
-
+    <button id="myButton" class="button" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
+    <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://rufinostone-mp-commerce-php.herokuapp.com";
+    };
+    </script>
   </div>
 </div>
 
