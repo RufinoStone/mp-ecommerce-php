@@ -180,7 +180,7 @@ $payer->address = array(
                                             </h3>
                                         </div>
                                         <h3 id="unit-price">
-                                            <?php echo "$" . $_POST['price'] ?>
+                                            <?php echo "R$" . $_POST['price'] ?>
                                         </h3>
                                         <h3 id="quantity">
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
