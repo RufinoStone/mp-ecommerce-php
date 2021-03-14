@@ -9,6 +9,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://www.mercadopago.com/v2/security.js" view="success"></script>
+
+
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+   
+   <style>
+div.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: #FF0000;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 40px;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+
     <style>
 div.card {
   width: 100%;
@@ -110,6 +174,9 @@ div.container {
     <b><?php echo "External Reference: " . htmlspecialchars($_GET["external_reference"]) ?></b>
     <br>
     <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
+    <br>
+    <button class="button" action="/index.php" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
+
   </div>
 </div>
 
