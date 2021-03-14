@@ -25,16 +25,15 @@ MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b6
 
 // Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
-
 // Cria um item na preferência
 $item = new MercadoPago\Item();
 $item->id = "1234";
-$item->title = "Heavy Duty Plastic Table";
+$item->title = $_POST['title'];
 $item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
-$item->category_id = "home";
+$item->category_id = "Smartphone";
 $item->quantity = 1;
 $item->currency_id = "BRL";
-$item->unit_price = 75.56;
+$item->unit_price = $_POST['price'];
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
       array("id" => "master")
