@@ -267,7 +267,7 @@ body {
     margin-top: 0.6em;
     padding: 12px 0;
     font-weight: 500;
-    background-color: #009EE3;
+    background-color: #161616;
     margin-bottom: 10px;
   }
   
@@ -280,12 +280,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: 13px;
-    color: #009ee3;
+    color: #161616;
     cursor:pointer;
   }
   
   .payment-form a:not([href]):hover{
-    color: #3483FA;
+    color: #161616;
     cursor:pointer;
   }
   
@@ -308,12 +308,12 @@ body {
   }
   
   footer p a {
-    color: #009ee3;
+    color: #161616;
     text-decoration: none;
   }
   
   footer p a:hover {
-    color: #3483FA;
+    color: #161616;
     text-decoration: none;
   }
     
