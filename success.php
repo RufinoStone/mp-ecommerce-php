@@ -105,11 +105,11 @@ div.container {
   </div>
 
   <div class="container">
-    <b><?php echo "Método de pagametno: " . htmlspecialchars($_GET["payment_type"]) ?></b>
+    <b><?php echo "Método de pagamento: " . htmlspecialchars($_GET["payment_type"]) ?></b>
     <br>
-    <b>External Reference, Value</b>
+    <b><?php echo "External Reference: " . htmlspecialchars($_GET["external_reference"]) ?></b>
     <br>
-    <b>Payment ID, IDValue</b>
+    <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
   </div>
 </div>
 
