@@ -64,7 +64,6 @@ $payer->phone = array(
   
 $payer->identification = array(
   "type" => "CPF",
-  "number" => "19119119100"
 );
   
 $payer->address = array(
