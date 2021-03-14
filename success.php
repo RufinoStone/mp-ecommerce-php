@@ -20,6 +20,7 @@ div.header {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
+  width: 100%;
   font-size: 40px;
 }
 
@@ -107,7 +108,6 @@ div.container {
     <b>Payment Method, Response</b>
     <b>External Reference, Value</b>
     <b>Payment ID, IDValue</b>
-
   </div>
 </div>
 
