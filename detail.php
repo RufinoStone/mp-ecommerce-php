@@ -18,7 +18,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
 MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327');
-
+MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 // Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
 // Cria um item na preferência
@@ -28,7 +28,6 @@ $item->title = $_POST['title'];
 $item->description = "“Celular de Tienda e-commerce";
 $item->category_id = "phones";
 $item->quantity = 1;
-$item->external_reference = "rufinostone@hotmail.com";
 $item->picture_url = $_POST['img'];
 $item->currency_id = "BRL";
 $item->unit_price = $_POST['price'];
@@ -39,11 +38,9 @@ $preference->payment_methods = array(
     "installments" => 6
   );
 
-$preference->merchant_account_id = "123456789";
 $preference->external_reference = "rufinostone@hotmail.com";
 $preference->colector_id = "725736327";
 $preference->notification_url = "https://webhook.site/30e36723-fc19-4410-91fd-63547e1444db";
-$preference->integrator_id = "dev_24c65fb163bf11ea96500242ac130004";
 $preference->back_urls = array(
     "success" => "https://rufinostone-mp-commerce-php.herokuapp.com/success.php",
     "failure" => "http://rufinostone-mp-commerce-php.herokuapp.com/failure.php",
@@ -64,7 +61,7 @@ $payer->phone = array(
   "area_code" => "55",
   "number" => "98529-8743"
 );
-  
+
 $payer->identification = array(
   "type" => "CPF",
 );
