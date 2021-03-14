@@ -175,7 +175,7 @@ div.container {
     <br>
     <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
     <br>
-    <button class="button" action="/index.php" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
+    <button class="button" href="https://rufinostone-mp-commerce-php.herokuapp.com/" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
 
   </div>
 </div>
