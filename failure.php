@@ -9,7 +9,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://www.mercadopago.com/v2/security.js" view="success"></script>
+   
     <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+   
+   <style>
 div.card {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -88,7 +131,7 @@ div.container {
 
                                 <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                     <h2 class=" as-filter-button-text" style="color:#ffff;">
-                                        Parabêns!
+                                        ERRO INESPERADO!
                                     </h2>
                                 </button>
 
@@ -108,6 +151,8 @@ div.container {
     <b>Houve um problema na hora de efetuar o pagamento, tente novamente!</b>
   </div>
 </div>
+
+<button class="button" style="vertical-align:middle"><span>Voltar a página inicial </span></button>
 
 </body>
             </div>
