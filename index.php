@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./assets/icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
+    <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"

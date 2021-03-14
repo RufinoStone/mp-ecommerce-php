@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
+    <script src="https://www.mercadopago.com/v2/security.js" view="details"></script>
 
           
     <?php
@@ -25,7 +25,7 @@ $preference = new MercadoPago\Preference();
 $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
-$item->description = "“Celular de Tienda e-commerce";
+$item->description = "Celular de Tienda e-commerce";
 $item->category_id = "phones";
 $item->quantity = 1;
 $item->picture_url = $_POST['img'];

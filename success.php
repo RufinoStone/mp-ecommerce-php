@@ -8,8 +8,25 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
-    
+    <script src="https://www.mercadopago.com/v2/security.js" view="success"></script>
+    <style>
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -79,6 +96,22 @@
                         </div>
                     </div>
                 </div>
+                <body>
+
+<div class="card">
+  <div class="header">
+    <h1 style="font-size: 50px">Success</h1>
+  </div>
+
+  <div class="container">
+    <b>Payment Method, Response</b>
+    <b>External Reference, Value</b>
+    <b>Payment ID, IDValue</b>
+
+  </div>
+</div>
+
+</body>
             </div>
         </div>
     </div>
