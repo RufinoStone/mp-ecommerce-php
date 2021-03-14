@@ -28,11 +28,49 @@ $preference = new MercadoPago\Preference();
 
 // Cria um item na preferência
 $item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
+$item->id = "1234";
+$item->title = "Heavy Duty Plastic Table";
+$item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
+$item->category_id = "home";
+$item->quantity = 7;
+$item->currency_id = "BRL";
 $item->unit_price = 75.56;
+$preference->payment_methods = array(
+    "excluded_payment_methods" => array(
+      array("id" => "master")
+    ),
+    "excluded_payment_types" => array(
+      array("id" => "ticket")
+    ),
+    "installments" => 12
+  );
+
 $preference->items = array($item);
 $preference->save();
+
+// Criar payer
+$payer = new MercadoPago\Payer();
+$payer->name = "Joao";
+$payer->surname = "Silva";
+$payer->email = "user@email.com";
+$payer->date_created = "2018-06-02T12:58:41.425-04:00";
+$payer->phone = array(
+  "area_code" => "11",
+  "number" => "4444-4444"
+);
+  
+$payer->identification = array(
+  "type" => "CPF",
+  "number" => "19119119100"
+);
+  
+$payer->address = array(
+  "street_name" => "Street",
+  "street_number" => 123,
+  "zip_code" => "06233200"
+);
+
+
 ?>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -147,13 +185,10 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <div style="background-color:#161616" data-elements-color="#161616" data-button-label="Efetuar Pagamento" > Efetuar Pagamento
-                                    <script
+                                    <script data-background-color="#161616" data-elements-color="#161616" data-button-label="Efetuar Pagamento"
                                      src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
                                      data-preference-id="<?php echo $preference->id; ?>">
                                     </script>
-                                    </div>
-                                   
                                 </div>
                             </div>
                         </div>
