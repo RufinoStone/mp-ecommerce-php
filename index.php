@@ -183,10 +183,10 @@
                                                 <div class="as-accordion-header as-search-accordion-header" data-ase-materializer="as-accordion-id1" data-ase-click="toggle">
                                                     <button id="as-accordion-header-button1" class="as-accordion-button" aria-controls="as-accordion-id1" aria-expanded="false" aria-labelledby="as-accordion-label-id1">
                                                         <span id="as-accordion-label-id1" class="as-accordion-title">
-                                                            <span class="as-search-accordion-title">Precio</span>
+                                                            <span class="as-search-accordion-title">Preço</span>
                                                         </span>
                                                         <span class="icon icon-plus as-accordion-plusicon">
-                                                            <span class="a11y">Precio</span>
+                                                            <span class="a11y">Preço</span>
                                                         </span>
                                                     </button>
                                                 </div>
@@ -241,7 +241,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $15.000
+                                                R$2.000
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
@@ -296,7 +296,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $10.000
+                                                R$1.200
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
@@ -352,7 +352,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $16.000
+                                                R$4.000
                                                 <span class="as-price-previousprice as-producttile-previousprice">
                                                 </span>
                                             </div>
@@ -409,7 +409,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $9.000
+                                                R$1.120
                                                 <span class="as-price-previousprice as-producttile-previousprice">
                                                 </span>
                                             </div>
@@ -461,7 +461,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $8.000
+                                                R$1.000
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
@@ -510,7 +510,7 @@
                                                 </h3>
                                             </div>
                                             <div class="as-price-currentprice as-producttile-currentprice">
-                                                $10.000
+                                                R$1.500
                                                 <span class="as-price-previousprice as-producttile-previousprice">
                                                 </span>
                                             </div>
@@ -541,7 +541,7 @@
         <div class="as-footnotes ">
             <div class="as-footnotes-content">
                 <div class="as-footnotes-sosumi">
-                    Todos los derechos reservados Tienda Tecno 2018
+                    Todos los derechos reservados Tienda Tecno 2021
                 </div>
             </div>
         </div>
