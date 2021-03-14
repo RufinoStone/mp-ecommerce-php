@@ -152,7 +152,7 @@ div.container {
   </div>
 </div>
 
-<button class="button" style="vertical-align:middle; horizontal-align:center"><span>Voltar a página inicial </span></button>
+<button class="button" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
 
 </body>
             </div>
