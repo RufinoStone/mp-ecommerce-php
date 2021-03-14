@@ -142,7 +142,7 @@ $preference->save();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <script
+                                    <script style="background-color: #161616"
                                      src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
                                      data-preference-id="<?php echo $preference->id; ?>">
                                     </script>
