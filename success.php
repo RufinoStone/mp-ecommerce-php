@@ -105,7 +105,7 @@ div.container {
   </div>
 
   <div class="container">
-    <b>Payment Method, Response</b>
+    <b><?php echo "Método de pagametno: " . $_POST['payment_type'] ?>/b>
     <br>
     <b>External Reference, Value</b>
     <br>
