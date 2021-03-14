@@ -14,7 +14,7 @@
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #FFA500;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -131,7 +131,7 @@ div.container {
 
                                 <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                     <h2 class=" as-filter-button-text" style="color:#ffff;">
-                                        ERRO INESPERADO!
+                                        Parabéns!
                                     </h2>
                                 </button>
 
@@ -144,11 +144,11 @@ div.container {
 
 <div class="card">
   <div class="header">
-    <h1 style="font-size: 50px">FALHA - ERRO NO PAGAMENTO</h1>
+    <h1 style="font-size: 50px">PENDENTE</h1>
   </div>
 
   <div class="container">
-    <b>Houve um problema na hora de efetuar o pagamento, tente novamente!</b>
+    <b>Estamos aguardando a confirmação do seu pagamento, pode levar de 2 até 5 dias úteis!</b>
    <br>
    <button id="myButton" class="button" style="vertical-align:center; horizontal-align:center"><span>Voltar a página inicial </span></button>
     <script type="text/javascript">
