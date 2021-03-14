@@ -29,19 +29,17 @@ $preference = new MercadoPago\Preference();
 $item = new MercadoPago\Item();
 $item->id = "1234";
 $item->title = $_POST['title'];
-$item->description = "Table is made of heavy duty white plastic and is 96 inches wide and 29 inches tall";
-$item->category_id = "Smartphone";
+$item->description = "“Celular de Tienda e-commerce";
+$item->category_id = "phones";
 $item->quantity = 1;
+$item->picture_url = $_POST['img'];
 $item->currency_id = "BRL";
 $item->unit_price = $_POST['price'];
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
-      array("id" => "master")
+      array("id" => "amex")
     ),
-    "excluded_payment_types" => array(
-      array("id" => "ticket")
-    ),
-    "installments" => 12
+    "installments" => 6
   );
 
 $preference->items = array($item);
@@ -50,13 +48,13 @@ $preference->save();
 // Criar payer
 $payer = new MercadoPago\Payer();
 $payer->id = "725762927";
-$payer->name = "Joao";
-$payer->surname = "Silva";
+$payer->name = "Lalo";
+$payer->surname = "Landa";
 $payer->email = "test_user_92801501@testuser.com";
 $payer->date_created = "2018-06-02T12:58:41.425-04:00";
 $payer->phone = array(
-  "area_code" => "11",
-  "number" => "4444-4444"
+  "area_code" => "55",
+  "number" => "98529-8743"
 );
   
 $payer->identification = array(
@@ -65,9 +63,9 @@ $payer->identification = array(
 );
   
 $payer->address = array(
-  "street_name" => "Street",
-  "street_number" => 123,
-  "zip_code" => "06233200"
+  "street_name" => "Insurgentes Sur",
+  "street_number" => 1602,
+  "zip_code" => "78134-190"
 );
 
 
