@@ -175,7 +175,7 @@ $payer = new MercadoPago\Payer();
                                             <?php echo "Quantidade: " . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
+                                    <button id="button-checkout" type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO</button>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +263,7 @@ $payer = new MercadoPago\Payer();
             <div class="payment-details">
               <div class="form-group col-sm-12">
                 <br>      
-                <div id="button-checkout">
+                <div>
                 </div>                 
                 <br>
                 <a id="go-back">
