@@ -140,10 +140,7 @@ $preference->save();
                                         </h3>
                                     </div>
                                     <button type="submit" style="background-color:#161616;" class="mercadopago-button" formmethod="post">EFETUAR PAGAMENTO
-                                    <script
-                                    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                                    data-preference-id="<?php echo $preference->id; ?>">
-                                    </script>
+                                   
                                     </button>
                                 </div>
                             </div>
