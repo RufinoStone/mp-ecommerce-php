@@ -11,6 +11,7 @@
 
           
     <?php
+    include("/vendor/autoload.php");
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
@@ -29,12 +30,6 @@ $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
 ?>
-
-          <script
-  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>">
-</script>
-
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -71,6 +66,14 @@ $preference->save();
 
 <body class="as-theme-light-heroimage">
 
+<form action="/processar_pagamento" method="POST">
+
+<script
+  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
+
+</form>
 
     <div class="stack">
         
