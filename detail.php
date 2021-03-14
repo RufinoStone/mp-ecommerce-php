@@ -21,7 +21,7 @@ data-button-label="BATATA"
 require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
-MercadoPago\SDK::setAccessToken('APP_USR-8063993645027418-110421-ca4c8e08a828f5e1d26d3e056005d5e1-330551185');
+MercadoPago\SDK::setAccessToken('APP_USR-334491433003961-030821-12d7475807d694b645722c1946d5ce5a-725736327');
 
 // Cria um objeto de preferência
 $preference = new MercadoPago\Preference();
