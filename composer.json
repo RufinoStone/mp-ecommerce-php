@@ -4,7 +4,6 @@
     "description": "mercadopago pro",
     "require": {
         "mercadopago/dx-php": "^2.2.1"
-        
     }
     
 }
