@@ -26,7 +26,7 @@ document.getElementById("checkout-btn").addEventListener("click", function() {
             }, 500);
         })
         .catch(function() {
-            alert("Unexpected error");
+            alert("Needed shopping cart");
             $('#checkout-btn').attr("disabled", false);
         });
   });
