@@ -42,9 +42,9 @@ $preference->payment_methods = array(
 $preference->colector_id = "725736327";
 $preference->integrator_id = "dev_24c65fb163bf11ea96500242ac130004";
 $preference->back_urls = array(
-    "success" => "https://https://rufinostone-mp-commerce-php.herokuapp.com/success",
-    "failure" => "http://https://rufinostone-mp-commerce-php.herokuapp.com/failure",
-    "pending" => "http://https://rufinostone-mp-commerce-php.herokuapp.com/pending"
+    "success" => "https://rufinostone-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "http://rufinostone-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "http://rufinostone-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
 $preference->items = array($item);

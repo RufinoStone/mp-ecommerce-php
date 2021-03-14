@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="as-searchnav-placeholder" style="height: 77px;">
-                        <div class="row as-search-navbar" style="background-color:#228B22;" id="as-search-navbar" style="width: auto;">
+                        <div class="row as-search-navbar" style="background-color:#161616;" id="as-search-navbar" style="width: auto;">
                             <div class="as-accessories-filter-tile column large-6 small-3" style="background-color:#161616;">
 
                                 <button class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
