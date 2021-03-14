@@ -10,12 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 
-
-<script>
-data-header-color="#c0392b"
-data-button-label="BATATA"
-
-</script>
           
     <?php
     include("/vendor/autoload.php");
