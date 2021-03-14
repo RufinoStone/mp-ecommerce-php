@@ -39,6 +39,8 @@ $preference->payment_methods = array(
     "installments" => 6
   );
 
+$preference->merchant_account_id = "123456789";
+$preference->external_reference = "rufinostone@hotmail.com";
 $preference->colector_id = "725736327";
 $preference->notification_url = "https://webhook.site/30e36723-fc19-4410-91fd-63547e1444db";
 $preference->integrator_id = "dev_24c65fb163bf11ea96500242ac130004";
