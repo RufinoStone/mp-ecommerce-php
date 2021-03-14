@@ -17,7 +17,7 @@ div.card {
 }
 
 div.header {
-  background-color: #4CAF50;
+  background-color: #FF0000;
   color: white;
   padding: 10px;
   width: 100%;
@@ -101,15 +101,11 @@ div.container {
 
 <div class="card">
   <div class="header">
-    <h1 style="font-size: 50px">Pagamento Efetuado com sucesso</h1>
+    <h1 style="font-size: 50px">FALHA - ERRO NO PAGAMENTO</h1>
   </div>
 
   <div class="container">
-    <b><?php echo "Método de pagamento: " . htmlspecialchars($_GET["payment_type"]) ?></b>
-    <br>
-    <b><?php echo "External Reference: " . htmlspecialchars($_GET["external_reference"]) ?></b>
-    <br>
-    <b><?php echo "ID de pagamento: " . htmlspecialchars($_GET["payment_id"]) ?></b>
+    <b>Houve um problema na hora de efetuar o pagamento, tente novamente!</b>
   </div>
 </div>
 
